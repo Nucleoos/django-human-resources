@@ -18,6 +18,6 @@ setup(
     packages = ['human_resources'],
     include_package_data=True,
 	install_requires=[
-		'Django>=1.2',
+		'Django==1.3.0',
     ],
 )
