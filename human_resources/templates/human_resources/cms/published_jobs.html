@@ -31,7 +31,7 @@
 
 <ul>
 	{% for job in jobs %}
-		<li>{{job.position.name}} in {{job.location}} <a class="jobLink" href="{{job.get_absolute_url}}">Learn more<span style="padding-left:8px;" class="pictos">4</span></a></li>
+		<li>{{job.position.name}}<a class="jobLink" href="{{job.get_absolute_url}}">Learn more<span style="padding-left:8px;" class="pictos">4</span></a></li>
 	{% endfor %}
 </ul>
 
