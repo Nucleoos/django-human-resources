@@ -146,7 +146,7 @@
 						<h3 id="otherJobsHeading" class="stylizedHeading">Other opportunities</h3>
 						<ul>
 							{% for other_job in other_jobs %}
-								<li><a href="{{other_job.get_absolute_url}}">{{other_job.position.name}} in {{other_job.location}}</a></li>
+								<li><a href="{{other_job.get_absolute_url}}">{{other_job.position.name}}</a></li>
 							{% endfor %}
 						</ul>
 
