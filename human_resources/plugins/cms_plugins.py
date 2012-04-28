@@ -17,7 +17,7 @@ class JobOpportunityPlugin(CMSPluginBase):
 	def render(self, context, instance, placeholder):
 		request = context["request"]
 		
-		jobs = JobOpportunity.objects.filter(published_status=2).order_by('-position')
+		jobs = JobOpportunity.objects.filter(published_status=2).order_by('position__name')
 		
 		context.update({
 			"jobs": jobs,
