@@ -240,7 +240,7 @@ class JobOpportunity(HRModel):
 		#return reverse('job_page', kwargs={"position_slug": self.position.slug, "location_slug": self.location_slug, "job_id": self.pk})
 	
 	def __unicode__(self):
-		return "%s" %(self.position)
+		return "%s - %s" %(self.position, self.location)
 	
 	class Meta:
 		verbose_name_plural = 'job opportunities'
